@@ -2,9 +2,14 @@ package com.exosolve.packageone;
 
 import com.exosolve.inheritance.Payment;
 
-public class TestRunPayment {
+public class TestRunPayment extends Payment{
+
+    TestRunPayment(){
+
+    }
     public static void main(String[] args) {
-        Payment payment = new Payment(1);
+        TestRunPayment testRunPayment = new TestRunPayment();
+
 
     }
 }

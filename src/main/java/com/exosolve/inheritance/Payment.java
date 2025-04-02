@@ -1,7 +1,7 @@
 package com.exosolve.inheritance;
 
 public  class Payment {
-    public int paymentversion;
+    protected int paymentversion;
     public int paymentId;
 
 
@@ -19,7 +19,6 @@ public  class Payment {
     public Payment(int paymentId){
 
         this.paymentId = paymentId;
-
 
 
 
