@@ -1,0 +1,19 @@
+Question:
+You are designing a logging framework for an enterprise application that requires different types of loggers (e.g., FileLogger, DatabaseLogger, CloudLogger) while enforcing strict design constraints. The system must be extensible, but certain components should remain immutable to maintain logging consistency.
+
+System Requirements:
+Abstract Base Class (Logger):
+-Defines a common structure for all loggers.
+-Cannot be instantiated directly.
+-Ensures mandatory methods (logMessage(), connect(), and disconnect()) that subclasses must implement.
+Standardized Logging Format:
+-Every log entry must follow a fixed format ([LOG] message).
+-This format should be final, meaning it cannot be modified in subclasses.
+Concrete Logger Implementations (FileLogger, DatabaseLogger):
+-Each subclass implements logMessage() based on its storage mechanism.
+-Must implement connect() and disconnect() to establish/release resources (e.g., file streams, database connections).
+-Subclasses must use the inherited logging format without overriding it.
+Restricting Further Extension:
+-Some loggers (e.g., CloudLogger) must be final, preventing any further subclassing.
+Extensibility Considerations:
+-Future loggers should be easy to add
