@@ -17,6 +17,7 @@ public class ThrowExampe {
         }
     }
     public static void main(String[] args) {
+        System.out.println(StaticExample.config);
         File f;
         FileInputStream fileInputStream = null;
         try {
