@@ -9,4 +9,11 @@ public class Tax {
         return 6;
     }
 
+    public int getTaxId() {
+        return taxId;
+    }
+
+    public double getTaxPercentage() {
+        return taxPercentage;
+    }
 }
