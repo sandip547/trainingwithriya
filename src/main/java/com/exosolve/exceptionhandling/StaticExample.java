@@ -6,6 +6,7 @@ public class StaticExample {
         config = "Hello00000";
         System.out.println(config);
     }
+
     StaticExample(int a){
         System.out.println("Hello");
     }
