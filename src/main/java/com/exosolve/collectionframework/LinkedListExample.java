@@ -43,6 +43,8 @@ public class LinkedListExample {
         long startTime = System.currentTimeMillis();
         System.out.println(startTime);
         arrayList.get(7000000);
+
+
         long endTime =  System.currentTimeMillis();
         System.out.println(endTime-startTime);
 
