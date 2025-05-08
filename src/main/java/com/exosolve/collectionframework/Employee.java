@@ -15,6 +15,7 @@ public class Employee {
     private String empName;
     private String empAge;
     private String email;
-    private List<String> mobileNumber;
+    //private List<String> mobileNumber;
+
 
 }
